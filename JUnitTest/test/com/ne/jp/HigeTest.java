@@ -28,9 +28,12 @@ public class HigeTest {
 	}
 
 	@Test
-	public void testCount() {
+	public void testCount1() {
 		assertThat(new Hige().count(1, 2), is(3));
-		
+	}
+	@Test
+	public void testCount2() {
+		assertThat(new Hige().count(3, 1), is(4));
 	}
 
 }
