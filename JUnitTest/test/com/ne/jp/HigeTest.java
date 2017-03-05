@@ -1,6 +1,7 @@
 package com.ne.jp;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*; 
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -28,7 +29,8 @@ public class HigeTest {
 
 	@Test
 	public void testCount() {
-		fail("‚Ü‚¾ŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
+		assertThat(new Hige().count(1, 2), is(3));
+		
 	}
 
 }
