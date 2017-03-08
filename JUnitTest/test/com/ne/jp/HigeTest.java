@@ -33,7 +33,7 @@ public class HigeTest {
 	}
 	@Test
 	public void testCount2() {
-		assertThat(new Hige().count(3, 1), is(4));
+		assertThat(new Hige().count(3, 10), is(13));
 	}
 
 }
