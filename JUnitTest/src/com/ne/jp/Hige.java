@@ -14,7 +14,7 @@ public class Hige {
 	}
 
 	private void aa(Function<String, Integer> fa) {
-		Function<String, File> f = s -> new File("/tmp", s);
+		Function<String, File> f = s -> new File("/tmp2", s);
 		File file = f.apply("test2.txt");
 		System.out.println(file);
 	}
