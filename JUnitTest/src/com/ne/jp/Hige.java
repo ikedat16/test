@@ -6,7 +6,7 @@ import java.util.function.Function;
 public class Hige {
 
 	public static void main(String[] args) {
-
+		new Hige().count(2, 2);
 	}
 	public int count(int i, int i2) {
 		aa(a -> 1);
