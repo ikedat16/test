@@ -29,5 +29,6 @@ public class Hige {
 		System.out.println(o.isPresent());
 		System.out.println(o.get());
 		o.ifPresent(s -> System.out.println(s));
+		System.out.println(o.orElseGet(() -> "ooo"));
 	}
 }
