@@ -24,4 +24,10 @@ public class Hige {
 		System.out.println(fa.apply("teststr"));
 		System.out.println("master");
 	}
+
+	private void optional(Optional<String> o) {
+		System.out.println(o.isPresent());
+		System.out.println(o.get());
+		o.ifPresent(s -> System.out.println(s));
+	}
 }
