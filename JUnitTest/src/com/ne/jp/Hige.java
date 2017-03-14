@@ -18,6 +18,6 @@ public class Hige {
 		File file = f.apply("test2.txt");
 		System.out.println(file);
 		System.out.println(fa.apply("teststr"));
-		System.out.println("master mod1");
+		System.out.println("master mod2");
 	}
 }
