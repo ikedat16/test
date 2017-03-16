@@ -31,6 +31,6 @@ public class Hige {
 		o.ifPresent(s -> System.out.println(s));
 		System.out.println(o.orElseGet(() -> "ooo"));
 		o.orElseThrow(() -> new RuntimeException());
-		System.out.println(o.map(a -> a).get());
+		System.out.println(o.map(a -> "else").get());
 	}
 }
