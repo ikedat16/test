@@ -32,5 +32,6 @@ public class Hige {
 		System.out.println(o.orElseGet(() -> "ooo"));
 		o.orElseThrow(() -> new RuntimeException());
 		System.out.println(o.map(a -> "else").get());
+		System.out.println("optional test");
 	}
 }
