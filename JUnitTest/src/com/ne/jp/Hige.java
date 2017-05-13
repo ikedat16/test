@@ -1,19 +1,26 @@
 package com.ne.jp;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
-import javax.swing.plaf.synth.SynthScrollBarUI;
+import jdk.nashorn.internal.parser.JSONParser;
 
 public class Hige {
 
 	public static void main(String[] args) {
-		new Hige().optional(Optional.ofNullable("abc"));
+//		new Hige().optional(Optional.ofNullable("abc"));
 //		new Hige().count(2, 2);
+		new Hige().sampleStream();
 	}
 	public int count(int i, int i2) {
-		aa(a -> a.length());
+//		aa(a -> a.length());
 		return i + i2;
 	}
 
@@ -34,4 +41,14 @@ public class Hige {
 		System.out.println(o.map(a -> "else").get());
 		System.out.println("optional test");
 	}
+	
+	private void sampleStream() {
+		IntStream.range(0, 10).mapToObj(i -> "str").forEach(System.out::println);
+		Stream.generate(() -> "abc").limit(10).forEach(System.out::println);
+		System.out.println(Arrays.asList(Stream.generate(() -> "@@@").limit(10).toArray(String[]::new)));
+		System.out.println(Stream.of("a", "b", "c").collect(Collectors.joining(", ")));
+		Stream<String> s = Stream.of("a", "b", "c");
+		Stream.builder().add("aa").build();
+	}
+
 }
